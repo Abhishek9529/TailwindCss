@@ -1,13 +1,16 @@
-import React from 'react'
+
 import InputFeild from './components/InputFeild'
 
 const App = () => {
   return (
     <div className='w-full h-screen p-4  '>
-      <p>Basic Information</p>
-      <p>Update your profile information below.</p>
+      {/* Header */}
+      <div >
+        <h2 className='text-xl font-semibold mb-2'>Basic Information</h2>
+        <p className='text-gray-600 textsm mb-4'>Update your profile information below.</p>
+      </div>
       {/* container */}
-      <div className='w-full  md:flex-wrap  md:flex  '>
+      <div className='w-full grid md:grid-cols-2 lg:grid-cols-3 gap-6  '>
         <InputFeild
           feildName={"First Name"}
         />
